@@ -1,7 +1,5 @@
-body {
-  background-image: url(img/castillo.png);
-  background-size: cover;
-}
+
+
 table {
   /*width: 100%;*/
 }
@@ -20,7 +18,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #9C6644;
+  background-color: #132aadbd;
   color: white;
   border: 1px solid black;
   cursor: pointer;
@@ -34,3 +32,4 @@ section {
   border: 1px solid black;
   margin-top: 10px;
 }
+
