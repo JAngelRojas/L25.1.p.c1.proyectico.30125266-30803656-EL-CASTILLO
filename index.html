@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Proyectico El Castillo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="formTienda">
+      <h1><u>Castillo Real C.A.</u></h1>
+      <table id="formTienda_tabla">
+        <tr>
+          <th>Codigo</th>
+          <th>Tipo</th>
+          <th>Proveedor</th>
+          <th>Costo</th>
+          <th>Bateria</th>
+          <th>Color</th>
+          <th>Incremento</th>
+          <th>Ganancia Nac</th>
+          <th>Precio Venta</th>
+        </tr>
+      </table>
+      <h5>
+        Cantidad de productos importados:
+        <span id="formTienda_lblcantImportados">0</span>
+      </h5>
+      <h5>
+        Cantidad de productos: <span id="formTienda_lblcantProductos">0</span>
+      </h5>
+      <h5>
+        Porcentaje de productos importados:
+        <span id="formTienda_lblporcentajeImportados">0</span>%
+      </h5>
+      <h5>Ganancia nacional: <span id="formTienda_lblgananciaNac">0</span>$</h5>
+      <h5>Total vendido: <span id="formTienda_lbltotalVendido">0</span>$</h5>
+      <h5>
+        Porcentaje de ganancia nacional:
+        <span id="formTienda_lblporcGananciaNac">0</span>%
+      </h5>
+      <button id="FormTienda_btAgregarJuguete">Agregar Juguete</button>
+      <button id="FormTienda_btAgregarDecoracion">Agregar Decoracion</button>
+    </section>
+    <section id="jugueteForm">
+      <h1>Agregar Juguete</h1>
+      <input type="text" id="jugueteForm_inCodigo" placeholder="Codigo" />
+      <input type="text" id="jugueteForm_inProveedor" placeholder="Proveedor" />
+      <input type="text" id="jugueteForm_inCosto" placeholder="Costo" />
+      <input type="text" id="jugueteForm_inBateria" placeholder="Bateria" />
+      <button id="jugueteForm_btAceptar">Agregar</button>
+    </section>
+    <section id="decoracionForm">
+      <h1>Agregar Decoracion</h1>
+      <input type="text" id="decoracionForm_inCodigo" placeholder="Codigo" />
+      <input
+        type="text"
+        id="decoracionForm_inProveedor"
+        placeholder="Proveedor"
+      />
+      <input type="text" id="decoracionForm_inCosto" placeholder="Costo" />
+      <input type="text" id="decoracionForm_inColor" placeholder="Color" />
+      <button id="decoracionForm_btAceptar">Agregar</button>
+    </section>
+  </body>
+  <script type="module">
+    import Cl_principal from "./js/principal.js";
+    new Cl_principal();
+  </script>
+</html>

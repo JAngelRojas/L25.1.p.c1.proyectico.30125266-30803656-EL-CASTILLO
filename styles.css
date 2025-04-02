@@ -1,0 +1,36 @@
+body {
+  background-image: url(img/castillo.png);
+  background-size: cover;
+}
+table {
+  /*width: 100%;*/
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #9C6644;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+section {
+  border: 1px solid black;
+  margin-top: 10px;
+}
