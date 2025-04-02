@@ -43,12 +43,12 @@ export default class Cl_vTienda {
                 <td>${producto.codigo}</td>
                 <td>${producto instanceof Cl_mJuguete ? "Juguete" : "Decoracion"}</td>
                 <td>${producto.proveedor}</td>
-                <td>${producto.costo}$</td>
+                <td>$${producto.costo}</td>
                 <td>${producto.bateria ?? "--"}</td>
                 <td>${producto.color ?? "--"}</td>
-                <td>${producto.incremento()* producto.costo}$</td>
-                <td>${producto.gananciaNac()}$</td>
-                <td>${producto.precioVenta()}$</td>
+                <td>$${producto.incremento()* producto.costo}</td>
+                <td>$${producto.gananciaNac()}</td>
+                <td>$${producto.precioVenta()}</td>
             </tr>`
 
             this.lblcantImportados.innerHTML = this.app.mTienda.cantImportados();
